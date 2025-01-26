@@ -9,7 +9,6 @@ class TodoModel {
     required this.completed,
   });
 
-  // Создаем объект из JSON
   factory TodoModel.fromJson(Map<String, dynamic> json) {
     return TodoModel(
       id: json['id'],
@@ -18,7 +17,6 @@ class TodoModel {
     );
   }
 
-  // Преобразуем объект в JSON
   Map<String, dynamic> toJson() {
     return {
       'id': id,
